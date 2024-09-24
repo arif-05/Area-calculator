@@ -41,7 +41,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                 <!-- Rectangle card -->
                 <div class="card bg-base-100 shadow-xl">
                     <figure>
@@ -52,41 +52,77 @@
                       <h2 class="card-title mx-auto">Rectangle</h2>
                       <p>Area (A) = w x l</p>
                       <div class="flex">
-                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="length"> 
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="length" id="rectangle-length"> 
                         <span class="mr-4 ml-2">cm</span>
-                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="width">
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="width" id="rectangle-width">
                         <span>cm</span>
                       </div>
 
+                      <div>
+                        <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+
+                     
+
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button class="btn btn-primary w-full" onclick="calculateRectangleArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <!-- third card -->
+                <!-- Parallelogram card -->
                 <div class="card bg-base-100 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        src="images/parallelogram.png"
                         alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
+                      <h2 class="card-title">Paralellogram</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                       <div class="card-actions justify-end">
                         <button class="btn btn-primary">Buy Now</button>
                       </div>
                     </div>
                   </div>
-                <!-- forth card -->
+                <!-- rhombus card -->
                 <div class="card bg-base-100  shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        src="images/rhombus.png"
                         alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pentagon card -->
+                <div class="card bg-base-100  shadow-xl">
+                    <figure>
+                      <img
+                        src="images/pentagon.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Ellipse card -->
+                <div class="card bg-base-100  shadow-xl">
+                    <figure>
+                      <img
+                        src="images/ellipse.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ellipse</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                       <div class="card-actions justify-end">
                         <button class="btn btn-primary">Buy Now</button>
