@@ -17,7 +17,7 @@
             <!-- shape card container -->
              <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- tringle card -->
-                <div class="card bg-base-100  shadow-xl ">
+                <div class="card bg-base-100  shadow-xl hover:bg-[#FBBCED]">
                     <figure>
                       <img
                         src="images/triangle.png"
@@ -43,7 +43,7 @@
                   </div>
 
                 <!-- Rectangle card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl hover:bg-[#69C7F0]">
                     <figure>
                       <img
                         src="images/rectangle.png" />
@@ -70,7 +70,7 @@
                     </div>
                   </div>
                 <!-- Parallelogram card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl hover:bg-[#FBBCED]">
                     <figure>
                       <img
                         src="images/parallelogram.png"
@@ -96,47 +96,80 @@
                     </div>
                   </div>
                 <!-- rhombus card -->
-                <div class="card bg-base-100  shadow-xl">
+                <div class="card bg-base-100  shadow-xl hover:bg-[#69C7F0]">
                     <figure>
                       <img
                         src="images/rhombus.png"
                         alt="Shoes" />
                     </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Rhombus</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-body text-center">
+                      <h2 class="card-title mx-auto">Rhombus</h2>
+                      <p class="">Area (A) =  d<sub>1</sub> x d<sub>2</sub></p>
+                      <div class="flex gap-2 items-center justify-center">
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="base" id="rhombus-base"> 
+                        <span class="">cm</span>
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="height" id="rhombus-height">
+                        <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="rhombus-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full" onclick="calculateRhombus()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- Pentagon card -->
-                <div class="card bg-base-100  shadow-xl">
+                <div class="card bg-base-100  shadow-xl hover:bg-[#FBBCED]">
                     <figure>
                       <img
                         src="images/pentagon.png"
                         alt="Shoes" />
                     </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Pentagon</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-body text-center">
+                      <h2 class="card-title mx-auto">Pentagon</h2>
+                      <p class="">Area (A) = 0.5 x p x b</p>
+                      <div class="flex gap-2 items-center justify-center">
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="perimeter" id="pentagon-perimeter"> 
+                        <span class="">cm</span>
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="apothem" id="pentagon-apothem">
+                        <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="pentagon-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full" onclick="calculatePentagon()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- Ellipse card -->
-                <div class="card bg-base-100  shadow-xl">
+                <div class="card bg-base-100  shadow-xl hover:bg-[#69C7F0]">
                     <figure>
                       <img
                         src="images/ellipse.png"
                         alt="Shoes" />
                     </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Ellipse</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-body text-center">
+                      <h2 class="card-title mx-auto">Ellipse</h2>
+                      <p class="">Area (A) = π x a x b</p>
+                      <div class="flex gap-2 items-center justify-center">
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="a axis" id="ellipse-base"> 
+                        <span class="">cm</span>
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="b axis" id="ellipse-height">
+                        <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="ellipse-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full" onclick="calculateEllipse()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -154,6 +187,9 @@
     <script src="scripts/tringle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/pentagon-calculate.js"></script>
+    <script src="scripts/ellipse-calculate.js"></script>
+    <script src="scripts/rhombus-calcultae.js"></script>
     
 </body>
 </html>
