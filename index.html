@@ -26,10 +26,10 @@
                     <div class="card-body">
                       <h2 class="card-title mx-auto">Tringle</h2>
                       <p class="text-center ">Area (A) = 0.5 X b X h </p>
-                      <div class="flex items-center gap-1">
-                        <input type="text" placeholder="b" class="w-24 text-xl p-2 rounded-sm" id="tringle-base">
+                      <div class="flex items-center justify-center gap-2">
+                        <input type="text" placeholder="base" class="w-24 text-xl p-2 rounded-sm" id="tringle-base">
                       <span>cm</span>
-                      <input type="text" placeholder="h" class="w-24 text-xl p-2 rounded-sm " id="tringle-height">
+                      <input type="text" placeholder="height" class="w-24 text-xl p-2 rounded-sm " id="tringle-height">
                       <span>cm</span>
                       </div>
                       <div class="text-center">
@@ -48,12 +48,12 @@
                       <img
                         src="images/rectangle.png" />
                     </figure>
-                    <div class="card-body">
+                    <div class="card-body text-center">
                       <h2 class="card-title mx-auto">Rectangle</h2>
                       <p>Area (A) = w x l</p>
-                      <div class="flex">
+                      <div class="flex gap-2 items-center justify-center">
                         <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="length" id="rectangle-length"> 
-                        <span class="mr-4 ml-2">cm</span>
+                        <span class="">cm</span>
                         <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="width" id="rectangle-width">
                         <span>cm</span>
                       </div>
@@ -76,11 +76,22 @@
                         src="images/parallelogram.png"
                         alt="Shoes" />
                     </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Paralellogram</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-body text-center">
+                      <h2 class="card-title mx-auto">Paralellogram</h2>
+                      <p class="">Area (A) = b x h</p>
+                      <div class="flex gap-2 items-center justify-center">
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="base" id="parallelogram-base"> 
+                        <span class="">cm</span>
+                        <input type="text" class="w-24 text-xl p-2 rounded-sm" placeholder="height" id="parallelogram-height">
+                        <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full" onclick="calculateParallelogram()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -142,6 +153,7 @@
 
     <script src="scripts/tringle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
+    <script src="scripts/parallelogram-calculate.js"></script>
     
 </body>
 </html>
